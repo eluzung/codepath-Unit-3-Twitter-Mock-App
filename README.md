@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Project 3 - *Name of App Here*
 
 **Twitter_2.0** is a basic twitter app to read your tweets.
@@ -29,5 +28,3 @@ Here's a walkthrough of implemented user stories:
 =======
 # codepath-Unit-3-Twitter-Mock-App
  Creating a mock app of Twitter using its API
- 
->>>>>>> acf3644a1447d4f9ccdd3d0eb9c606210f3334ec
