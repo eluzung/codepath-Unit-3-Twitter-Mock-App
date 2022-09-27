@@ -1,3 +1,33 @@
+<<<<<<< HEAD
+# Project 3 - *Name of App Here*
+
+**Twitter_2.0** is a basic twitter app to read your tweets.
+
+Time spent: **7** hours spent in total
+
+## User Stories
+
+The following **required** functionality is completed:
+
+- [x] User sees app icon in home screen and styled launch screen. (1pt)
+- [x] User can log in. (1pt)
+- [x] User can log out. (1pt)
+- [x] User stays logged in across restarts. (1pt)
+- [ ] User can view tweets with the user profile picture, username, and tweet text. (6pts)
+
+The following **bonus** features are implemented:
+
+- [ ] User can pull to refresh. (1pt)
+- [ ] User can load past tweets infinitely. (2pts)
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+=======
 # codepath-Unit-3-Twitter-Mock-App
  Creating a mock app of Twitter using its API
  
+>>>>>>> acf3644a1447d4f9ccdd3d0eb9c606210f3334ec
