@@ -23,7 +23,7 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![Alt Text](https://i.imgur.com/AKohIZr.gif)
+https://i.imgur.com/AKohIZr.gif
 
 =======
 # codepath-Unit-3-Twitter-Mock-App
