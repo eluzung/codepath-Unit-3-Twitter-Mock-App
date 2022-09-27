@@ -23,7 +23,7 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![](https://i.imgur.com/AKohIZr.gif)
+<img src='https://i.imgur.com/AKohIZr.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 =======
 # codepath-Unit-3-Twitter-Mock-App
