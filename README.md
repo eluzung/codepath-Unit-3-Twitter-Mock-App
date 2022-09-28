@@ -1,6 +1,6 @@
-# Project 3 - *Twitter_2.0*
+# Project 3 - *Tweet_2.0*
 
-**Twitter_2.0** is a basic twitter app to read your tweets.
+**Tweet_2.0** is a basic twitter app to read your tweets.
 
 Time spent: **7** hours spent in total
 
@@ -23,7 +23,7 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-https://i.imgur.com/AKohIZr.gif
+<img src="https://i.imgur.com/LyOdTds.gif" width=200>
 
 =======
 # codepath-Unit-3-Twitter-Mock-App
