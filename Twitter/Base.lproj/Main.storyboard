@@ -80,22 +80,22 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" text="Tweets" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6w-6q-jY6">
-                                            <rect key="frame" x="89" y="31" width="270" height="79"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Tweets" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6w-6q-jY6">
+                                            <rect key="frame" x="89" y="34" width="270" height="76"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="F6w-6q-jY6" firstAttribute="trailing" secondItem="l7A-iS-FaV" secondAttribute="trailingMargin" id="0Pw-HM-9MT"/>
                                         <constraint firstItem="v5h-Ho-RQi" firstAttribute="top" secondItem="l7A-iS-FaV" secondAttribute="topMargin" id="6VK-py-zTd"/>
-                                        <constraint firstItem="F6w-6q-jY6" firstAttribute="leading" secondItem="v5h-Ho-RQi" secondAttribute="trailing" constant="8" symbolic="YES" id="Grb-aV-ShR"/>
+                                        <constraint firstItem="F6w-6q-jY6" firstAttribute="top" secondItem="ge8-Xv-KIT" secondAttribute="bottom" id="7vE-9o-8uw"/>
                                         <constraint firstItem="ge8-Xv-KIT" firstAttribute="leading" secondItem="v5h-Ho-RQi" secondAttribute="trailing" constant="8" symbolic="YES" id="RVG-71-mOV"/>
-                                        <constraint firstAttribute="trailing" secondItem="F6w-6q-jY6" secondAttribute="trailing" constant="16" id="YLi-qf-GWA"/>
                                         <constraint firstItem="ge8-Xv-KIT" firstAttribute="top" secondItem="l7A-iS-FaV" secondAttribute="topMargin" id="bpS-ji-meX"/>
+                                        <constraint firstItem="F6w-6q-jY6" firstAttribute="leading" secondItem="v5h-Ho-RQi" secondAttribute="trailing" constant="8" symbolic="YES" id="erD-ZV-JB7"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="F6w-6q-jY6" secondAttribute="bottom" id="f1U-Pv-DHA"/>
                                         <constraint firstItem="v5h-Ho-RQi" firstAttribute="leading" secondItem="l7A-iS-FaV" secondAttribute="leadingMargin" id="hBD-fm-f6k"/>
-                                        <constraint firstAttribute="bottom" secondItem="F6w-6q-jY6" secondAttribute="bottom" id="kV8-hE-z2w"/>
-                                        <constraint firstItem="F6w-6q-jY6" firstAttribute="top" secondItem="ge8-Xv-KIT" secondAttribute="bottom" constant="8" symbolic="YES" id="ybY-xQ-ZS0"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -133,6 +133,12 @@
                         <color key="backgroundColor" red="0.2823529541" green="0.58039218189999997" blue="0.88627451660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="0.2823529541" green="0.58039218189999997" blue="0.88627451660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="barTintColor" red="0.2823529541" green="0.58039218189999997" blue="0.88627451660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <navigationBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" red="0.2823529541" green="0.58039218189999997" blue="0.88627451660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" red="0.2823529541" green="0.58039218189999997" blue="0.88627451660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </navigationBarAppearance>
                     </navigationBar>
                     <connections>
                         <segue destination="YrN-cs-TrR" kind="relationship" relationship="rootViewController" id="Nhb-oM-bKb"/>
