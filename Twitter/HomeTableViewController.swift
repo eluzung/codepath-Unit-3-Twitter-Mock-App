@@ -27,20 +27,16 @@ class HomeTableViewController: UITableViewController {
     func loadTweet(){
         let myURL = "https://api.twitter.com/1.1/statuses/home_timeline.json"
         let myParams = ["count": 20]
-        
+
         TwitterAPICaller.client?.getDictionariesRequest(url: myURL, parameters: myParams, success: { (tweets: [NSDictionary]) in
-            
             self.tweetArray.removeAll()
             for tweet in tweets {
                 self.tweetArray.append(tweet)
             }
-            
             self.tableView.reloadData()
-            
         }, failure: { (Error) in
             print("Could not retreive tweets!")
         })
-        
     }
     
     @IBAction func logoutButton(_ sender: Any) {
@@ -51,18 +47,20 @@ class HomeTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "tweetCell", for: indexPath) as! TweetCellTableViewCell
-        let user = tweetArray[indexPath.row]["user"] as! NSDictionary
-        cell.usernameLabel.text = user["name"] as? String
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "tweetCell", for: indexPath) as! TweetCellTableViewCell
+        let user = tweetArray[indexPath.row]["user"] as? NSDictionary
+        cell.usernameLabel.text = user?["name"] as? String
         cell.tweetsLabel.text = tweetArray[indexPath.row]["text"] as? String
         
-        let imageURL = URL(string: (user["profile_image_url_https"] as? String)!)
+        let imageURL = URL(string: (user?["profile_image_url_https"] as? String)!)
         let data = try? Data(contentsOf: imageURL!)
         
         if let imageData = data {
             cell.profileImage.image = UIImage(data: imageData)
         }
         
+        cell.setLiked(tweetArray[indexPath.row]["favorited"] as! Bool)
+        cell.tweetId = tweetArray[indexPath.row]["id"] as! Int
         return cell
     }
 
